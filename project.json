@@ -1,0 +1,15 @@
+{
+  "name": "workspace",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": ".",
+  "projectType": "application",
+  "targets": {
+    "serve-all": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["nx serve my-nuxt-app", "nx serve my-vue-app"],
+        "parallel": true
+      }
+    }
+  }
+}
